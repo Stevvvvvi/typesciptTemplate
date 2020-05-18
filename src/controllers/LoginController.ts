@@ -9,6 +9,10 @@ import {get,controller,use,bodyValidator, post} from './decorators'
 
 @controller('/auth')
 class LoginController{
+    // @get('/')
+    // add(a:number,b:number):number{
+    //     return a+b;
+    // }
     @get('/login')
     //@use(logger)
     getLogin(req:Request,res:Response):void{
