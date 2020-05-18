@@ -8,6 +8,7 @@ var body_parser_1 = __importDefault(require("body-parser"));
 var AppRouter_1 = require("./AppRouter");
 require("./controllers/LoginController");
 var cookie_session_1 = __importDefault(require("cookie-session"));
+require("./controllers/RootController");
 var app = express_1.default();
 app.use(body_parser_1.default.urlencoded({ extended: true }));
 app.use(cookie_session_1.default({ keys: ['asdfasdfasdfsadf'] }));
